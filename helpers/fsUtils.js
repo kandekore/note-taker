@@ -25,7 +25,7 @@ const readAndAppend = (content, file) => {
     if (err) {
       console.error(err);
     } else {
-      const parsedData = JSON.parse(db);
+      const parsedData = JSON.parse(data);
       parsedData.push(content);
       writeToFile(file, parsedData);
     }
