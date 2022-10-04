@@ -1,7 +1,3 @@
-// const express = require("express");
-// const path = require("path");
-// const fs = require("fs");
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -77,6 +73,7 @@ const handleNoteSave = () => {
     text: noteText.value,
   };
   console.log(newNote);
+  window.location.reload();
 
   saveNote(newNote).then(() => {
     getAndRenderNotes();
