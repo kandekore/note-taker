@@ -13,7 +13,7 @@ const uuid = require("./helpers/uuid");
 // const getAndRenderNotes = require("./public/assets/js/index");
 
 const app = express();
-const PORT = 3001;
+const PORT = 3002;
 
 // Import custom middleware, "cLog"
 app.use(clog);
